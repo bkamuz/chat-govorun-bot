@@ -11,7 +11,7 @@ telebot.logger.setLevel(logging.DEBUG)
 
 load_dotenv()
 ''' 
-# d
+# simply add .env file to folder where API key will be stored like bellow:
 BOT_API_KEY=XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 OPENAI_API_KEY=xx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 '''
@@ -46,5 +46,4 @@ def get_codex(message):
     
     prev_response = f'{response["choices"][0]["message"]["content"]}\n'
 
-        
 bot.infinity_polling()
